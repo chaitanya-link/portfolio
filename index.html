@@ -76,7 +76,7 @@
       <div class="section-head reveal">
         <div>
           <p class="eyebrow">Selected work</p>
-          <h2>Two things I've built end to end.</h2>
+          <h2>A few things I've built end to end.</h2>
         </div>
         <svg class="ticker" viewBox="0 0 132 40" aria-hidden="true">
           <path d="M2,30 C18,32 26,10 40,14 S64,28 78,18 S102,4 130,10" />
@@ -85,6 +85,47 @@
       </div>
 
       <div class="work-list">
+        <article class="work-item reveal">
+          <div class="work-media">
+            <img src="assets/project-autopitch.jpg" alt="AutoPitch landing page showing its live six-stage outreach pipeline: scrape, RAG, draft, verify, send, reply" loading="lazy" width="1000" height="587" />
+          </div>
+          <div class="work-tag">AI / Agents</div>
+          <div class="work-body">
+            <span class="work-title">AutoPitch</span>
+            <p class="work-desc">An agentic cold-outreach engine that researches before it writes. It scrapes a lead's own site, retrieves the most relevant passages with RAG, and has Gemini draft a personalized email grounded in that context — scoring its own confidence and routing anything uncertain to human review instead of guessing.</p>
+            <ul class="work-highlights">
+              <li>Full six-stage pipeline: scrape → chunk &amp; embed → retrieve (pgvector) → draft → confidence-gate → send → reply-match</li>
+              <li>Real email threading — matches replies back to the original message via In-Reply-To / References headers</li>
+              <li>Respects robots.txt and paces sends with a hard daily cap — built for deliverability, not just a demo</li>
+            </ul>
+            <div class="work-meta">
+              <div class="stack"><span>RAG</span><span>Gemini</span><span>pgvector</span><span>SMTP/IMAP</span></div>
+              <a class="work-link" href="https://frontend-chaitu11106-coders-projects.vercel.app" target="_blank" rel="noopener">View live →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-item reveal">
+          <div class="work-media work-media--pair">
+            <img src="assets/project-neuralthreads-1.jpg" alt="NeuralThreads landing page: Your AI forgets everything, every session" loading="lazy" width="1000" height="703" />
+            <img src="assets/project-neuralthreads-2.jpg" alt="NeuralThreads memory engine diagram connecting ChatGPT, Claude, and Grok through one encrypted memory core" loading="lazy" width="1000" height="703" />
+          </div>
+          <div class="work-tag">Browser Extension / AI</div>
+          <div class="work-body">
+            <span class="work-title">NeuralThreads</span>
+            <p class="work-desc">A cross-platform memory layer for AI chat. It reads a conversation straight off the page, compresses it through a RAG pipeline into a clean summary, and injects that context into a brand-new chat on a completely different platform — so Claude can pick up exactly where ChatGPT left off.</p>
+            <ul class="work-highlights">
+              <li>Capture → Compress → Store → Inject: real chunking, embeddings and retrieval, not a copy-paste trick</li>
+              <li>Works across ChatGPT, Claude, Gemini and Perplexity with no API keys — reads what's already on screen</li>
+              <li>Encrypted, searchable session library reachable from any device</li>
+            </ul>
+            <div class="work-meta">
+              <div class="stack"><span>RAG</span><span>Browser Extension</span><span>Encryption</span></div>
+              <a class="work-link" href="https://neuralthreads-462e2.web.app/" target="_blank" rel="noopener">View live →</a>
+            </div>
+          </div>
+        </article>
+
         <article class="work-item reveal">
           <div class="work-tag">C++17 / Systems</div>
           <div class="work-body">
