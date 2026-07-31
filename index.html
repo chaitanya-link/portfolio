@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Chaitanya Joshi — Software Developer</title>
+<meta name="description" content="Chaitanya Joshi — software developer building systems and real-time platforms. Portfolio and selected work." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230A0C10'/%3E%3Ccircle cx='16' cy='16' r='9' fill='%233B9EFF'/%3E%3C/svg%3E" />
+<link rel="stylesheet" href="styles.css" />
+<noscript><style>.reveal { opacity: 1 !important; transform: none !important; }</style></noscript>
+</head>
+<body>
+
+<!-- SVG filter used to fuse the blobs into a liquid, gooey shape -->
+<svg class="sr-only" width="0" height="0">
+  <defs>
+    <filter id="goo">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="16" result="blur" />
+      <feColorMatrix in="blur" mode="matrix"
+        values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -9" result="goo" />
+      <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+    </filter>
+  </defs>
+</svg>
+
+<!-- Ambient liquid field: sits behind the entire page, not just the hero -->
+<div class="ambient-field" aria-hidden="true">
+  <span class="amb-blob amb-1"></span>
+  <span class="amb-blob amb-2"></span>
+  <span class="amb-blob amb-3"></span>
+  <span class="amb-blob amb-4"></span>
+</div>
+<div class="spotlight" aria-hidden="true"></div>
+
+<div class="page">
+<header class="site-nav">
+  <div class="nav-inner">
+    <a class="wordmark" href="#top">chaitanya<span>.dev</span></a>
+    <ul class="nav-links">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="liquid-stage" aria-hidden="true">
+      <div class="liquid-blobs">
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+        <span class="blob blob-3"></span>
+        <span class="blob blob-4"></span>
+      </div>
+    </div>
+
+    <div class="wrap wrap--wide hero-content">
+      <div class="hero-text">
+        <p class="eyebrow reveal">Software Developer · Bangalore, India</p>
+        <h1 class="reveal">I build systems that hold up under pressure.</h1>
+        <p class="sub reveal">Trading engines with sub-millisecond latency. Real-time platforms coordinating thousands of people. I care about the version of software that doesn't fall over when it matters.</p>
+        <div class="actions reveal">
+          <a class="btn-primary" href="#work">View work →</a>
+          <a class="quiet-link" href="mailto:chaitanyanj25@gmail.com">chaitanyanj25@gmail.com</a>
+        </div>
+      </div>
+      <div class="hero-portrait reveal">
+        <img class="hero-photo" src="assets/chaitanya-hero.jpg" alt="Chaitanya Joshi reading, mid-thought, in a room lined with books" width="280" height="280" decoding="async" />
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="wrap wrap--wide">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">Selected work</p>
+          <h2>Two things I've built end to end.</h2>
+        </div>
+        <svg class="ticker" viewBox="0 0 132 40" aria-hidden="true">
+          <path d="M2,30 C18,32 26,10 40,14 S64,28 78,18 S102,4 130,10" />
+          <circle r="3" />
+        </svg>
+      </div>
+
+      <div class="work-list">
+        <article class="work-item reveal">
+          <div class="work-tag">C++17 / Systems</div>
+          <div class="work-body">
+            <span class="work-title">Mean Edge</span>
+            <p class="work-desc">An intraday trading simulator implementing a gap-up rejection strategy built from three years of personal market observation and manual trading. Sub-millisecond latency per candle, constant space complexity O(1). Capital-based 2% stop-loss / 7% target risk model, single position, max two trades a day, automatic 15:00 square-off.</p>
+            <div class="work-meta">
+              <div class="stack"><span>C++17</span><span>Risk Modeling</span><span>O(1) space</span></div>
+              <a class="work-link" href="https://github.com/chaitu11106-coder/MeanEdge" target="_blank" rel="noopener">View repo →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-item reveal">
+          <div class="work-tag">Full-Stack / AI</div>
+          <div class="work-body">
+            <span class="work-title">ArenaFlow</span>
+            <p class="work-desc">A real-time venue logistics platform with AI-powered smart crowd routing. Separate Attendee and Operator portals, live metrics for capacity (94.2%), flow rate (4.8 m/s), and sub-2s response time across the coordination layer.</p>
+            <div class="work-meta">
+              <div class="stack"><span>Next.js</span><span>Vercel</span><span>Real-time</span></div>
+              <a class="work-link" href="https://arena-flow-nine.vercel.app" target="_blank" rel="noopener">View live →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>A little context.</h2>
+        </div>
+      </div>
+      <div class="about-grid">
+        <div class="about-body reveal">
+          <p>I'm currently completing an MCA at Bangalore Institute of Technology, after a BCA at Karnataka University of Dharwad. Most of what I build starts from a real problem I've sat with for a while — Mean Edge came out of three years of manually trading a strategy before I trusted it enough to automate.</p>
+          <p>I completed a Software Engineering Virtual Experience with Goldman Sachs, and outside of code I read and write — mostly poetry, occasionally a novel I'm slowly working through.</p>
+        </div>
+        <dl class="facts reveal">
+          <div class="facts-row">
+            <dt>Education</dt>
+            <dd>MCA, Bangalore Institute of Technology — 2025–Present, 8.8 CGPA</dd>
+          </div>
+          <div class="facts-row">
+            <dt></dt>
+            <dd>BCA, Karnataka University of Dharwad — 2022–2025, 8.2 CGPA</dd>
+          </div>
+          <div class="facts-row">
+            <dt>Experience</dt>
+            <dd>Intern, RiseUpp — Dec 2022–Mar 2023</dd>
+          </div>
+          <div class="facts-row">
+            <dt>Certifications</dt>
+            <dd>Software Engineering Virtual Experience, Goldman Sachs</dd>
+          </div>
+          <div class="facts-row">
+            <dt></dt>
+            <dd>C Programming Certification</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap reveal">
+      <p class="eyebrow">Contact</p>
+      <h2>Open to new roles and interesting problems.</h2>
+      <div class="contact-row">
+        <a class="contact-email" href="mailto:chaitanyanj25@gmail.com">chaitanyanj25@gmail.com</a>
+        <div class="contact-secondary">
+          <a href="https://github.com/chaitu11106-coder" target="_blank" rel="noopener">GitHub</a>
+          <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap wrap--wide footer-inner">
+      <p>chaitanya.dev — built with care</p>
+      <p>© 2026 Chaitanya Joshi</p>
+    </div>
+  </footer>
+</main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
