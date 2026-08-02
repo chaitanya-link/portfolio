@@ -58,8 +58,8 @@
     <div class="wrap wrap--wide hero-content">
       <div class="hero-text">
         <p class="eyebrow reveal">Software Developer · Bangalore, India</p>
-        <h1 class="reveal">I build systems that hold up under pressure.</h1>
-        <p class="sub reveal">Trading engines with sub-millisecond latency. Real-time platforms coordinating thousands of people. I care about the version of software that doesn't fall over when it matters.</p>
+        <h1 class="reveal">I build AI systems that solve real problems.</h1>
+        <p class="sub reveal">RAG pipelines, LLM-powered tools, and memory layers for AI — custom-built around a specific problem instead of bolted on as a generic wrapper. I care about the version of software that actually ships.</p>
         <div class="actions reveal">
           <a class="btn-primary" href="#work">View work →</a>
           <a class="quiet-link" href="mailto:chaitanyanj25@gmail.com">chaitanyanj25@gmail.com</a>
@@ -85,23 +85,25 @@
       </div>
 
       <div class="work-list">
-        <article class="work-item reveal">
-          <div class="work-media">
-            <img src="assets/project-autopitch.jpg" alt="AutoPitch landing page showing its live six-stage outreach pipeline: scrape, RAG, draft, verify, send, reply" loading="lazy" width="1000" height="587" />
-          </div>
-          <div class="work-tag">AI / Agents</div>
-          <div class="work-body">
-            <span class="work-title">AutoPitch</span>
-            <p class="work-desc">An agentic cold-outreach engine that researches before it writes. It scrapes a lead's own site, retrieves the most relevant passages with RAG, and has Gemini draft a personalized email grounded in that context — scoring its own confidence and routing anything uncertain to human review instead of guessing.</p>
-            <ul class="work-highlights">
-              <li>Full six-stage pipeline: scrape → chunk &amp; embed → retrieve (pgvector) → draft → confidence-gate → send → reply-match</li>
-              <li>Real email threading — matches replies back to the original message via In-Reply-To / References headers</li>
-              <li>Respects robots.txt and paces sends with a hard daily cap — built for deliverability, not just a demo</li>
-            </ul>
-            <div class="work-meta">
-              <div class="stack"><span>RAG</span><span>Gemini</span><span>pgvector</span><span>SMTP/IMAP</span></div>
-              <a class="work-link" href="https://frontend-chaitu11106-coders-projects.vercel.app" target="_blank" rel="noopener">View live →</a>
+        <article class="work-item work-item--split reveal">
+          <div class="work-main">
+            <div class="work-tag">AI / Agents</div>
+            <div class="work-body">
+              <span class="work-title">AutoPitch</span>
+              <p class="work-desc">An agentic cold-outreach engine that researches before it writes. It scrapes a lead's own site, retrieves the most relevant passages with RAG, and has Gemini draft a personalized email grounded in that context — scoring its own confidence and routing anything uncertain to human review instead of guessing.</p>
+              <ul class="work-highlights">
+                <li>Full six-stage pipeline: scrape → chunk &amp; embed → retrieve (pgvector) → draft → confidence-gate → send → reply-match</li>
+                <li>Real email threading — matches replies back to the original message via In-Reply-To / References headers</li>
+                <li>Respects robots.txt and paces sends with a hard daily cap — built for deliverability, not just a demo</li>
+              </ul>
+              <div class="work-meta">
+                <div class="stack"><span>RAG</span><span>Gemini</span><span>pgvector</span><span>SMTP/IMAP</span></div>
+                <a class="work-link" href="https://frontend-chaitu11106-coders-projects.vercel.app" target="_blank" rel="noopener">View live →</a>
+              </div>
             </div>
+          </div>
+          <div class="work-media work-media--side">
+            <img src="assets/project-autopitch-side.jpg" alt="AutoPitch's live six-stage outreach pipeline: scrape, RAG, draft, verify, send, reply" loading="lazy" width="690" height="727" />
           </div>
         </article>
 
@@ -127,6 +129,9 @@
         </article>
 
         <article class="work-item reveal">
+          <div class="work-media">
+            <img src="assets/project-meanedge.jpg" alt="Custom candlestick chart illustrating Mean Edge's gap-up rejection strategy, with entry, stop-loss, and target levels annotated" loading="lazy" width="1000" height="587" />
+          </div>
           <div class="work-tag">C++17 / Systems</div>
           <div class="work-body">
             <span class="work-title">Mean Edge</span>
@@ -134,18 +139,6 @@
             <div class="work-meta">
               <div class="stack"><span>C++17</span><span>Risk Modeling</span><span>O(1) space</span></div>
               <a class="work-link" href="https://github.com/chaitu11106-coder/MeanEdge" target="_blank" rel="noopener">View repo →</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="work-item reveal">
-          <div class="work-tag">Full-Stack / AI</div>
-          <div class="work-body">
-            <span class="work-title">ArenaFlow</span>
-            <p class="work-desc">A real-time venue logistics platform with AI-powered smart crowd routing. Separate Attendee and Operator portals, live metrics for capacity (94.2%), flow rate (4.8 m/s), and sub-2s response time across the coordination layer.</p>
-            <div class="work-meta">
-              <div class="stack"><span>Next.js</span><span>Vercel</span><span>Real-time</span></div>
-              <a class="work-link" href="https://arena-flow-nine.vercel.app" target="_blank" rel="noopener">View live →</a>
             </div>
           </div>
         </article>
@@ -161,33 +154,40 @@
           <h2>A little context.</h2>
         </div>
       </div>
-      <div class="about-grid">
-        <div class="about-body reveal">
-          <p>I'm currently completing an MCA at Bangalore Institute of Technology, after a BCA at Karnataka University of Dharwad. Most of what I build starts from a real problem I've sat with for a while — Mean Edge came out of three years of manually trading a strategy before I trusted it enough to automate.</p>
-          <p>I completed a Software Engineering Virtual Experience with Goldman Sachs, and outside of code I read and write — mostly poetry, occasionally a novel I'm slowly working through.</p>
+      <div class="about-body reveal">
+        <p>Most of what I work on sits at the intersection of retrieval, language models, and the web — RAG pipelines that ground an LLM in real data, memory layers that carry context across tools, and custom AI solutions built around one specific problem instead of a generic wrapper around an API call. Outside of code I read and write — mostly poetry, occasionally a novel I'm slowly working through.</p>
+      </div>
+
+      <div class="exp-block reveal">
+        <h3 class="sub-heading">Experience</h3>
+        <div class="exp-list">
+          <div class="exp-item">
+            <div class="exp-head">
+              <span class="exp-role">Software Developer Intern</span>
+              <span class="exp-org">Livo Assistant</span>
+              <span class="exp-date">Current</span>
+            </div>
+            <p class="exp-desc">Building out the RAG-driven core of Livo Assistant's product — designing retrieval pipelines that cut manual research time and measurably increased team efficiency. Shipped web development work end to end alongside it, and built custom conversational bots for client-facing use cases, taking each from spec to deployment.</p>
+          </div>
+          <div class="exp-item">
+            <div class="exp-head">
+              <span class="exp-role">Research Analyst Intern</span>
+              <span class="exp-org">RiseUpp</span>
+              <span class="exp-date">Dec 2022 – Mar 2023</span>
+            </div>
+            <p class="exp-desc">Produced structured technical knowledge content, translating core programming concepts into clear, teachable material. Analyzed, tested, and processed real datasets to surface insights that fed directly into the team's research output, contributing to a genuinely collaborative, research-first culture.</p>
+          </div>
         </div>
-        <dl class="facts reveal">
-          <div class="facts-row">
-            <dt>Education</dt>
-            <dd>MCA, Bangalore Institute of Technology — 2025–Present, 8.8 CGPA</dd>
-          </div>
-          <div class="facts-row">
-            <dt></dt>
-            <dd>BCA, Karnataka University of Dharwad — 2022–2025, 8.2 CGPA</dd>
-          </div>
-          <div class="facts-row">
-            <dt>Experience</dt>
-            <dd>Intern, RiseUpp — Dec 2022–Mar 2023</dd>
-          </div>
-          <div class="facts-row">
-            <dt>Certifications</dt>
-            <dd>Software Engineering Virtual Experience, Goldman Sachs</dd>
-          </div>
-          <div class="facts-row">
-            <dt></dt>
-            <dd>C Programming Certification</dd>
-          </div>
-        </dl>
+      </div>
+
+      <div class="edu-block reveal">
+        <h3 class="sub-heading">Education</h3>
+        <div class="edu-lines">
+          <p>MCA, Bangalore Institute of Technology — 2025–Present, 8.8 CGPA</p>
+          <p>BCA, Karnataka University of Dharwad — 2022–2025, 8.2 CGPA</p>
+          <p>Software Engineering Virtual Experience, Goldman Sachs</p>
+          <p>C Programming Certification</p>
+        </div>
       </div>
     </div>
   </section>
@@ -199,8 +199,9 @@
       <div class="contact-row">
         <a class="contact-email" href="mailto:chaitanyanj25@gmail.com">chaitanyanj25@gmail.com</a>
         <div class="contact-secondary">
-          <a href="https://github.com/chaitu11106-coder" target="_blank" rel="noopener">GitHub</a>
-          <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/chaitanya-link" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/chaitanya-joshi-311077260" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="assets/Chaitanya_Joshi_CV.pdf" download>Download CV ↓</a>
         </div>
       </div>
     </div>
