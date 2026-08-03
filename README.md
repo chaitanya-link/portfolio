@@ -1,49 +1,41 @@
 # chaitanya.dev
 
-Personal portfolio site for Chaitanya Joshi — software developer working across RAG pipelines, LLM-powered tools, and full-stack web development.
+Static portfolio site. No framework, no build step, no package manager, no dependencies.
 
-Built as a static site: no framework, no build step, no dependencies. Just HTML, CSS, and vanilla JS.
+## Stack
 
-## Features
+- **HTML5** — `index.html`, single page
+- **CSS3** — `styles.css`, custom properties for theming, no preprocessor
+- **Vanilla JavaScript (ES5/ES6, no libraries)** — `script.js`
+- Assets are plain `.jpg`/`.pdf` files served statically, no image pipeline or CDN transform
 
-- **Liquid animated background** — gooey, drifting blobs (SVG filter + CSS animation) that run behind the entire page, not just the hero, with a cursor-tracked parallax and spotlight glow.
-- **Scroll reveals** with a hard fallback — content degrades gracefully if JS fails or `IntersectionObserver` is unavailable.
-- **Dark/light aware** — respects the viewer's OS/browser theme via CSS custom properties.
-- **Fully responsive** — tested down to 375px, including a dedicated stacking layout for the split project cards.
-- **Zero build tooling** — open `index.html` directly or serve the folder with any static file server.
+No React/Vue/Next.js, no bundler (Webpack/Vite/esbuild), no CSS framework (Tailwind/Bootstrap), no npm dependencies at all. The entire site is three source files plus static assets.
 
 ## Structure
 
 ```
 .
-├── index.html                 # all page markup
-├── styles.css                 # design tokens + all styling
-├── script.js                  # scroll reveals, cursor/spotlight effects, magnetic button
+├── index.html
+├── styles.css
+├── script.js
 └── assets/
-    ├── chaitanya-hero.jpg     # hero portrait
-    ├── Chaitanya_Joshi_CV.pdf # downloadable resume
+    ├── chaitanya-hero.jpg
+    ├── Chaitanya_Joshi_CV.pdf
     ├── project-autopitch-side.jpg
     ├── project-neuralthreads-1.jpg
     ├── project-neuralthreads-2.jpg
-    └── project-meanedge.jpg   # custom-generated candlestick chart (not a screenshot)
+    └── project-meanedge.jpg
 ```
 
-## Sections
+## Deployment
 
-- **Hero** — intro, role, primary CTA.
-- **Work** — [AutoPitch](https://frontend-chaitu11106-coders-projects.vercel.app) (agentic RAG cold-outreach engine), [NeuralThreads](https://neuralthreads-462e2.web.app/) (cross-platform AI memory layer), and [Mean Edge](https://github.com/chaitu11106-coder/MeanEdge) (C++17 trading simulator).
-- **About** — bio, layered experience timeline, compact education.
-- **Contact** — email, GitHub, LinkedIn, CV download.
+- **Hosting:** [Vercel](https://vercel.com) — static deployment, no build command (framework preset: Other)
+- **Live URL:** https://chaitanya-portfolio-virid.vercel.app
+- **Source:** https://github.com/chaitanya-link/portfolio
 
 ## Running locally
 
-Any static file server works:
-
 ```bash
 python -m http.server 8090
-# then open http://localhost:8090
+# http://localhost:8090
 ```
-
-## License
-
-Personal project — all rights reserved.
