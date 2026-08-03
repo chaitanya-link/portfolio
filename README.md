@@ -1,5 +1,7 @@
 # chaitanya.dev
 
+**Live: [chaitanya-portfolio-virid.vercel.app](https://chaitanya-portfolio-virid.vercel.app)**
+
 Static portfolio site. No framework, no build step, no package manager, no dependencies.
 
 ## Stack
